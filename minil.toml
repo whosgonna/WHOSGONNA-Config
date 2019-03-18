@@ -1,0 +1,4 @@
+name = "AltiGen-Config"
+# badges = ["travis"]
+module_maker="ModuleBuildTiny"
+
