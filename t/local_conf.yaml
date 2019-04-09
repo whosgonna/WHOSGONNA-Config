@@ -1,0 +1,12 @@
+key2: new value for key 2
+key3:
+    subkey3_2: new value for subkey3_2
+    subkey3_3: Entirely new subkey3_3
+key4: Replace hasref with scalar
+key5:
+    - new value `unshift`ed to array
+key6:
+key6:
+    - To overwrite a key, first 
+    - re-cast it to empty scalar.
+    - Then add it as hashref, etc.
