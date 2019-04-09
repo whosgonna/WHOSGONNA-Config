@@ -47,7 +47,7 @@ has additional_conf_stems => (
 );
 
 has conf_files => (
-    is => 'lazy',
+    is => 'ro',
 );
 
 has home_dir => (
@@ -123,10 +123,22 @@ has _conf_any => (
 
 sub _build__conf_any {
     my $self = shift;
+    
     my $conf_any = Config::Any->load_stems({ 
         stems => $self->conf_stems,
         use_ext => 1,
     });
+    
+    if ( $self->conf_files ){
+        my $contents = Config::Any->load_files({
+            files           => $self->conf_files,
+            use_ext         => 1,
+            flatten_to_hash => 1,
+        });
+        push ( @$conf_any, $contents );
+    }
+    
+
     return $conf_any;
 }
 
@@ -145,8 +157,8 @@ has conf => (
 sub _build_conf {
     my $self = shift;
     my $conf;
+
     for my $individual_conf ( @{ $self->_conf_any } ) {
-        use Data::Printer;
         my ($filename, $sections) = %$individual_conf;
         $conf = merge( $sections, $conf);
     }
