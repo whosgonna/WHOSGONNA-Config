@@ -9,7 +9,7 @@ use FindBin qw($Bin $Script);
 use File::Spec::Functions;
 use File::Basename;
 
-our $VERSION = "v0.0.1";
+our $VERSION = "v0.0.2";
 
 
 
