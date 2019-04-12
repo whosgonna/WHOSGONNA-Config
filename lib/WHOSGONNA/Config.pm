@@ -1,4 +1,4 @@
-package AltiGen::Config;
+package WHOSGONNA::Config;
 use 5.008001;
 use strict;
 use warnings;
@@ -145,7 +145,7 @@ sub _build__conf_any {
 sub make_config {
     my $args = shift;
 
-    my $conf = AltiGen::Config->new( $args );
+    my $conf = WHOSGONNA::Config->new( $args );
 
 }
 
@@ -172,15 +172,15 @@ __END__
 
 =head1 NAME
 
-AltiGen::Config - It's new $module
+WHOSGONNA::Config - It's new $module
 
 =head1 SYNOPSIS
 
-    use AltiGen::Config;
+    use WHOSGONNA::Config;
 
 =head1 DESCRIPTION
 
-AltiGen::Config is ...
+WHOSGONNA::Config is ...
 
 =head1 LICENSE
 
@@ -191,7 +191,7 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-Ben Kaufman E<lt>ben.kaufman@altigen.comE<gt>
+Ben Kaufman E<lt>ben.whosgonna.com@gmail.comE<gt>
 
 =cut
 

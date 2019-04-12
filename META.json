@@ -1,7 +1,7 @@
 {
    "abstract" : "It's new $module",
    "author" : [
-      "Ben Kaufman <ben.kaufman@altigen.com>"
+      "Ben Kaufman <ben.whosgonna.com@gmail.com>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.0.10, CPAN::Meta::Converter version 2.150010",
@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "AltiGen-Config",
+   "name" : "WHOSGONNA-Config",
    "no_index" : {
       "directory" : [
          "t",

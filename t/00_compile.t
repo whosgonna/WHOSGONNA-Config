@@ -1,17 +1,18 @@
 use strict;
 use Test::More 0.98;
 use Data::Printer;
+use FindBin qw($Bin);
 
 use_ok $_ for qw(
-    AltiGen::Config
+    WHOSGONNA::Config
 );
 
 my $conf = new_ok( 
-    'AltiGen::Config' , 
+    'WHOSGONNA::Config' , 
     [
-        conf_files => [ '/home/ben/projects/AltiGen-Config/xt/extra_conf.yaml' ]
+        conf_files => [ "$Bin/../xt/extra_conf.yaml" ]
     ] , 
-    'New AltiGen::Config object' 
+    'New WHOSGONNA::Config object' 
 );
 
 p $conf->conf;

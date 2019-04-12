@@ -1,14 +1,14 @@
 # NAME
 
-AltiGen::Config - It's new $module
+WHOSGONNA::Config - It's new $module
 
 # SYNOPSIS
 
-    use AltiGen::Config;
+    use WHOSGONNA::Config;
 
 # DESCRIPTION
 
-AltiGen::Config is ...
+WHOSGONNA::Config is ...
 
 # LICENSE
 
@@ -19,4 +19,4 @@ it under the same terms as Perl itself.
 
 # AUTHOR
 
-Ben Kaufman <ben.kaufman@altigen.com>
+Ben Kaufman <ben.whosgonna.com@gmail.com>

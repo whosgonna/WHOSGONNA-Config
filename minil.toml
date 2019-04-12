@@ -1,4 +1,4 @@
-name = "AltiGen-Config"
+name = "WHOSGONNA-Config"
 # badges = ["travis"]
 module_maker="ModuleBuildTiny"
 
